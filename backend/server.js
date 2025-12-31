@@ -2,6 +2,7 @@ import express from "express";
 import sgMail from "@sendgrid/mail";
 import dotenv from "dotenv";
 import cors from "cors";
+import path from "path";
 
 const app = express();
 dotenv.config();
@@ -9,12 +10,23 @@ const PORT = 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow frontend origin
+    origin: "https://forgetech-africa.onrender.com", // Allow frontend origin
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
 );
 app.use(express.json());
+
+// Serve static files from frontend/dist with correct MIME types
+app.use(
+  express.static(path.join(process.cwd(), "frontend", "dist"), {
+    setHeaders: (res, path) => {
+      if (path.endsWith(".css")) {
+        res.setHeader("Content-Type", "text/css");
+      }
+    },
+  })
+);
 
 sgMail.setApiKey(process.env.SENDERGRID_KEY);
 
