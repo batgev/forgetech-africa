@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { API_URL } from "./api.js";
 
 function Footer() {
   //state for sending messages
@@ -9,7 +10,7 @@ function Footer() {
   const sendMessage = async () => {
     if (!name | !email | !message) return;
     try {
-      const res = await fetch(`http://localhost:5000/send`, {
+      const res = await fetch(`${API_URL}/send`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
