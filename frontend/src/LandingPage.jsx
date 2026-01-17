@@ -74,13 +74,13 @@ const LandingPage = () => {
               onClick={() => setToggleView(false)}
             />
             <li className="text-2xl">
-              <a href="#">About Us</a>
+              <a href="#about" onClick={()=>setToggleView(false)}>Back To Top</a>
             </li>
             <li className="text-2xl">
-              <a href="#">Contributors</a>
+              <a href="#contributors" onClick={()=>setToggleView(false)}>Contributors</a>
             </li>
             <li className="text-2xl">
-              <a href="#">Blog</a>
+              <a href="#blog" onClick={()=>setToggleView(false)}>Blog</a>
             </li>
           </ul>
         </div>
@@ -380,7 +380,7 @@ const LandingPage = () => {
               className={`flex flex-col items-center w-[200px] transition-all duration-700 ease-out `}
             >
               <img
-                src="assets/galaxy.jpg"
+                src="assets/alhassan.jpg"
                 alt="dev-gee"
                 className="h-[130px] w-[130px] object-cover "
               />
