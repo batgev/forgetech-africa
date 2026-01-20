@@ -32,10 +32,7 @@ const LandingPage = () => {
     triggerOnce: true,
   });
 
-  const { ref: blogpostsRef, inView: blogpostsInView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
+
 
   return (
     <div
@@ -295,41 +292,7 @@ const LandingPage = () => {
             <span>See more...</span>
           </div>
         </div>
-        {/*blog  section */}
-        <div
-          id="blog"
-          ref={blogpostsRef}
-          className={` bg-white text-black w-screen flex flex-col items-center transition-all duration-700 ease-out ${
-            blogpostsInView
-              ? "opacity-100 translate-y-10"
-              : "opacity-0 translate-y-0"
-          }`}
-        >
-          <h3 className="font-bold">Latest Stories From Our Blog</h3>
-          <div className="w-[100%] flex  flex-col items-center flex-wrap gap-2 p-2 leading-loose">
-            {/*blog1 */}
-            <div className="flex flex-col gap-2 items-center pl-2 md:pl-0">
-              <h4 className="underline font-bold">
-                <em> CodeWthMe Web Platform to be launched soon</em>
-              </h4>
-              <article>
-                The free web learning platform "CodeWithMe" will be launched
-                soon according to lead Engineer Batong Gevaise.
-              </article>
-            </div>
-            <hr className="w-[100vw] h-2 bg-slate-800" />
-            {/*blog 2*/}
-            <div className="flex flex-col gap-2 items-center pl-2 md:pl-0">
-              <h4 className="underline font-bold">
-                <em> CodeWthMe Web Platform to be launched soon</em>
-              </h4>
-              <article>
-                The free web learning platform "CodeWithMe" will be launched
-                soon according to lead Engineer Batong Gevaise.
-              </article>
-            </div>
-          </div>
-        </div>
+        
         {/*contributors section */}
         <div
           id="contributors"
