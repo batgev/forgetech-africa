@@ -315,8 +315,6 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Musa Mueena</h2>
-                
-                <span>github.com/mueena</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
                 </button>
@@ -332,8 +330,6 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Emmanuel Kombat</h2>
-              
-                <span>github.com/kombat</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
                 </button>
@@ -349,8 +345,6 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Iddrisu Alhassan</h2>
-  
-                <span>github.com/batgev</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
                 </button>
@@ -366,8 +360,7 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Galaxy</h2>
-    
-                <span>github.com/batgev</span>
+
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
                 </button>
@@ -383,8 +376,6 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Batong Gevaise</h2>
-                <span>Full Stack Developer</span>
-                <span>github.com/batgev</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
                 </button>
