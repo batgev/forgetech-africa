@@ -315,7 +315,7 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Musa Mueena</h2>
-                <span>CEO</span>
+                
                 <span>github.com/mueena</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
@@ -332,7 +332,7 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Emmanuel Kombat</h2>
-                <span>UI & Ux Designer</span>
+              
                 <span>github.com/kombat</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
@@ -349,7 +349,7 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Iddrisu Alhassan</h2>
-                <span>Frontend Developer</span>
+  
                 <span>github.com/batgev</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
@@ -366,7 +366,7 @@ const LandingPage = () => {
               />
               <div className="flex flex-col items-center leading-normal">
                 <h2>Galaxy</h2>
-                <span>Team Member</span>
+    
                 <span>github.com/batgev</span>
                 <button className="bg-slate-800 border-2 border-white px-2 rounded-md mt-2">
                   <a href="https://github.com/batgev">Reach Out</a>
