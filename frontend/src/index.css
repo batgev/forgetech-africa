@@ -6,3 +6,89 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.ui-card{
+    position: absolute;
+    top:180px;
+    right:300px;
+    background: #111827;
+    color: #60a5fa;
+    padding: 16px 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+}
+.ui-card,.floating-card,.floating-card1, .floating-card2{
+    animation: float 4s ease-in-out infinite;
+}
+.floating-card1 {
+     position: absolute;
+    top:250px;
+    right:150px;
+    background: #60a5fa;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+}
+.floating-card2 {
+     position: absolute;
+    top:350px;
+    right:330px;
+    background: rgb(105, 105, 38);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+}
+img{
+    filter:drop-shadow(0 10px 20px white);
+}
+.floating-card {
+     position: absolute;
+    top:250px;
+    right:500px;
+    background: green;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+}
+
+@keyframes float{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}
+
+@media (max-width:600px){
+    .ui-card,.floating-card,.floating-card1,.floating-card2{
+      position: relative;
+     top:0;
+     right: 0;
+     left: 0;
+     width: 40vw;
+      animation: none;
+    }
+    .floating-card1{
+        left:65vw;
+        top:-10vh;
+        width:35vw;
+    }
+    .ui-card{
+        left: 30vw;
+        width: 45vw;
+    }
+    .floating-card2{
+        left: 30vw;
+        top:-10vh;
+       width: 43vw;
+    }
+    .floating-card{
+        left:1vw;
+
+    }
+}

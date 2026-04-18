@@ -1,9 +1,14 @@
 import LandingPage from "./LandingPage";
+import {createHashRouter,RouterProvider} from 'react-router-dom'
 const App = () => {
+  const router = createHashRouter([
+    {
+      path:'/',
+      element:<LandingPage />
+    },
+  ])
   return (
-    <div className="w-full h-full bg-slate-900">
-      <LandingPage />
-    </div>
+   <RouterProvider router={router}/>
   );
 };
 
