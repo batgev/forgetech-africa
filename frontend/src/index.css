@@ -66,29 +66,7 @@ img{
 
 @media (max-width:600px){
     .ui-card,.floating-card,.floating-card1,.floating-card2{
-      position: relative;
-     top:0;
-     right: 0;
-     left: 0;
-     width: 40vw;
-      animation: none;
+     display: none;
     }
-    .floating-card1{
-        left:65vw;
-        top:-10vh;
-        width:35vw;
-    }
-    .ui-card{
-        left: 30vw;
-        width: 45vw;
-    }
-    .floating-card2{
-        left: 30vw;
-        top:-10vh;
-       width: 43vw;
-    }
-    .floating-card{
-        left:1vw;
-
-    }
+   
 }

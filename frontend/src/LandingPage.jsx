@@ -39,7 +39,7 @@ const LandingPage = () => {
           <span className="text-2xl md:text-4xl text-cyan-800 text-center">
             AFFORDABLE CUSTOM
           </span>
-          <span className="text-[5rem] md:text-[9rem] text-cyan-950 font-sans font-bold">
+          <span className="text-[4.5rem] md:text-[9rem] text-cyan-950 font-sans font-bold">
             WEBSITES
           </span>
           <pre className="text-xl md:text-3xl  text-cyan-800 text-center font-semibold">
