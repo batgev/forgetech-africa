@@ -2,7 +2,7 @@
 
 import {Link} from 'react-router-dom'
 const Header = () => {
-const nav = [{id:'00',text:"Home"},{id:'01',text:"Services"},{id:"03",text:"Hire Us"},{id:"04",text:'Contact'}];
+const nav = [{id:'00',text:"Home",path:'/'},{id:'01',text:"Services",path:"/services"},{id:"03",text:"Hire Us",path:"/hire"},{id:"04",text:'Contact',path:"/contact"}];
 
 
   return (
@@ -23,7 +23,7 @@ const nav = [{id:'00',text:"Home"},{id:'01',text:"Services"},{id:"03",text:"Hire
           style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)" ,backdropFilter:'blur(10px)'}}
         >
           {nav.map((list, index) => (
-            <Link key={index.id} className="flex gap-2 hover:cursor-pointer hover:-translate-y-1 transition-all duration-75">
+            <Link to={list.path} key={index.id} className="flex gap-2 hover:cursor-pointer hover:-translate-y-1 transition-all duration-75">
               <span>{list.id}</span>
               <span>{list.text}</span>
             </Link>
