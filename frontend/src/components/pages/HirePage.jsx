@@ -17,7 +17,7 @@ const HirePage = () => {
       <div className="flex-1 flex flex-col gap-4 items-center w-full ">
         {/**hero section */}
         <div className="w-[80%]">
-          <h1 className="text-[3rem]">Hire Our Team</h1>
+          <h1 className="text-[2.5rem] md:text-[3rem]">Hire Our Team</h1>
           <span className="text-xl">
             Let's build a website that grows your business.
           </span>
@@ -165,7 +165,7 @@ const HirePage = () => {
           </div>
         </div>
         <div className="w-full flex justify-center">
-          <button className="bg-cyan-800 text-white font-bold outline-none py-4 rounded-md w-[50%]">
+          <button className="bg-cyan-800 text-white font-bold outline-none py-4 rounded-md w-[80%] px-2 md:px-0 md:w-[50%]">
             Submit Project Request
           </button>
         </div>
