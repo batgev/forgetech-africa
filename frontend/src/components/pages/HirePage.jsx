@@ -93,7 +93,7 @@ const HirePage = () => {
               <select
                 name="service-type"
                 id="service-type"
-                className="border rounded-sm outline-cyan-700 p-2 bg-blue-50"
+                className="border rounded-sm outline-cyan-700 w-[90%] md:w-auto p-2 bg-blue-50"
               >
                 <option value="Website Design">Website Design</option>
                 <option value="E-Commerce">E-Commerce</option>
@@ -108,7 +108,7 @@ const HirePage = () => {
               <select
                 name="budget"
                 id="budget"
-                className="border rounded-sm outline-cyan-700 p-2 bg-blue-50"
+                className="border rounded-sm outline-cyan-700 p-2 w-[90%] md:w-auto bg-blue-50"
               >
                 <option value="$100-$300">$100-$300</option>
                 <option value="$300-$700">$300-$700</option>
