@@ -82,7 +82,7 @@ const HirePage = () => {
               ></textarea>
             </div>
           </form>
-          <form className="flex flex-col gap-4 text-cyan-800 w-[400px]   rounded-md p-2">
+          <form className="flex flex-col gap-4 text-cyan-800 md:w-[400px]   rounded-md p-2">
             <div>
               <h3 className="text-center text-2xl font-semibold  underline">
                 Service Selection
