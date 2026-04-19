@@ -88,12 +88,12 @@ const HirePage = () => {
                 Service Selection
               </h3>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 w-[95%] md:w-auto ">
               <label htmlFor="service-type">Service Type</label>
               <select
                 name="service-type"
                 id="service-type"
-                className="border rounded-sm outline-cyan-700 w-[90%] md:w-auto p-2 bg-blue-50"
+                className="border rounded-sm outline-cyan-700 w-full md:w-auto p-2 bg-blue-50"
               >
                 <option value="Website Design">Website Design</option>
                 <option value="E-Commerce">E-Commerce</option>
@@ -103,12 +103,12 @@ const HirePage = () => {
                 <option value="Custom Solution">Custom Solution</option>
               </select>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1  w-[95%] md:w-auto ">
               <label htmlFor="budget">Budget</label>
               <select
                 name="budget"
                 id="budget"
-                className="border rounded-sm outline-cyan-700 p-2 w-[90%] md:w-auto bg-blue-50"
+                className="border rounded-sm outline-cyan-700 p-2 w-full md:w-auto bg-blue-50"
               >
                 <option value="$100-$300">$100-$300</option>
                 <option value="$300-$700">$300-$700</option>
@@ -116,7 +116,7 @@ const HirePage = () => {
                 <option value="Custom Quote">Custom Quote</option>
               </select>
             </div>
-            <hr className='w-[90%] md:w-auto'/>
+            <hr className="w-[90%] md:w-auto" />
             <div className="flex flex-col gap-4 mt-6">
               <div className="text-center text-2xl text-cyan-800 font-semibold underline">
                 Project TimeLines
