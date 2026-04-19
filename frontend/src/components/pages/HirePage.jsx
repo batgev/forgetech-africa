@@ -116,7 +116,7 @@ const HirePage = () => {
                 <option value="Custom Quote">Custom Quote</option>
               </select>
             </div>
-            <hr />
+            <hr className='w-[90%] md:w-auto'/>
             <div className="flex flex-col gap-4 mt-6">
               <div className="text-center text-2xl text-cyan-800 font-semibold underline">
                 Project TimeLines
