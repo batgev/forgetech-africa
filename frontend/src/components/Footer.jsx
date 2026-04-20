@@ -25,13 +25,13 @@ function Footer() {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li className="hidden md:flex">
                 <Link to="/services">Services</Link>
               </li>
               <li>
                 <Link to="/hire">Hire Us</Link>
               </li>
-              <li>
+              <li className="hidden md:flex">
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
