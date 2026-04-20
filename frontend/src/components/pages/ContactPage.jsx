@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 import Header from "../Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../Footer";
+import { API_URL } from "../../api";
 const ContactPage = () => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async () => {
+    if (!fullName || !email || !phoneNumber || !subject || !message) {
+      return toast.error("All fields are important");
+    }
+
+    try {
+      const res = await fetch(`${API_URL}/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullName,
+          email,
+          phoneNumber,
+          subject,
+          message,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        toast.error(data.error || "Something went wrong");
+      } else {
+        toast.success("Message sent");
+        setFullName("");
+        setEmail("");
+        setPhoneNumber("");
+        setSubject("");
+        setMessage("");
+      }
+    } catch (_) {
+      toast.error("Poor internet connection, try again later");
+    }
+  };
+
   return (
     <div
       className="flex flex-col items-center gap-4 h-full  w-full text-[$4b5563]"
@@ -37,6 +78,8 @@ const ContactPage = () => {
                 id="full-name"
                 placeholder="fullname"
                 className="border rounded-sm outline-cyan-700 p-2 bg-blue-50"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -46,6 +89,8 @@ const ContactPage = () => {
                 id="email"
                 placeholder="emial"
                 className="border rounded-sm outline-cyan-700 p-2 bg-blue-50"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -55,6 +100,8 @@ const ContactPage = () => {
                 id="tel"
                 placeholder="+233 000 000 000"
                 className="border rounded-sm outline-cyan-700 p-2 bg-blue-50"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -63,6 +110,8 @@ const ContactPage = () => {
                 type="text"
                 placeholder="Project request"
                 className="border rounded-sm outline-cyan-700 p-2 bg-blue-50"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -72,10 +121,16 @@ const ContactPage = () => {
                 id="project-description"
                 placeholder="provide a brief description of your project.."
                 className="border rounded-sm outline-cyan-700 p-2 bg-blue-50"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div className="w-full flex justify-center">
-              <button className="bg-cyan-800 text-white font-bold outline-none py-4 rounded-md w-[80%] px-2 md:px-0 md:w-[80%]">
+              <button
+                type="button"
+                className="bg-cyan-800 text-white font-bold outline-none py-4 rounded-md w-[80%] px-2 md:px-0 md:w-[80%]"
+                onClick={handleSubmit}
+              >
                 Send Message
               </button>
             </div>

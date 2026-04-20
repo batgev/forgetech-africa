@@ -22,8 +22,8 @@ const nav = [{id:'00',text:"Home",path:'/'},{id:'01',text:"Services",path:"/serv
           className="bg-cyan-800 sticky  h-10 w-[500px] rounded-2xl text-white flex gap-4 justify-evenly items-center"
           style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)" ,backdropFilter:'blur(10px)'}}
         >
-          {nav.map((list, index) => (
-            <Link to={list.path} key={index.id} className="flex gap-2 hover:cursor-pointer hover:-translate-y-1 transition-all duration-75">
+          {nav.map((list) => (
+            <Link to={list.path} key={list.id} className="flex gap-2 hover:cursor-pointer hover:-translate-y-1 transition-all duration-75">
               <span>{list.id}</span>
               <span>{list.text}</span>
             </Link>
