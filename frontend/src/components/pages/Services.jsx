@@ -130,12 +130,17 @@ const Services = () => {
             </li>
           </ul>
           <div className="flex justify-center mb-4 mt-4">
-            <Link to="/hire" className="bg-cyan-800 text-white text-center rounded-md p-[14px]  w-[200px] animate-pulse">
+            <Link
+              to="/hire"
+              className="bg-cyan-800 text-white text-center rounded-md p-[14px]  w-[200px] animate-pulse"
+            >
               Hire Us
             </Link>
           </div>
         </div>
-        <Footer />
+        <div className="hidden md:flex md:w-full">
+          <Footer />
+        </div>
       </div>
     </div>
   );
