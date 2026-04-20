@@ -80,7 +80,7 @@ const ContactPage = () => {
               </button>
             </div>
           </form>
-          <div className="md:pl-[40px]">
+          <div className="md:pl-[40px] mt-8 md:mt-0">
             <ul className="text-2xl flex  flex-col gap-4 justify-evenly md:justify-normal h-full">
               <li>
                 <FontAwesomeIcon icon="fa-phone" color="green" />
