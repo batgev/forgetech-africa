@@ -2,6 +2,7 @@ import Services from "./components/pages/Services";
 import LandingPage from "./LandingPage";
 import HirePage from './components/pages/HirePage'
 import ContactPage from "./components/pages/ContactPage"
+import { Toaster } from "react-hot-toast";
 import {createHashRouter,RouterProvider} from 'react-router-dom'
 const App = () => {
   const router = createHashRouter([
@@ -23,7 +24,10 @@ const App = () => {
     }
   ])
   return (
-   <RouterProvider router={router}/>
+    <div>
+      <RouterProvider router={router} />
+      <Toaster position="bottom-right" />
+    </div>
   );
 };
 
